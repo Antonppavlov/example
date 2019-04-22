@@ -20,7 +20,7 @@ public class AndroidDriversMethods {
         cap.setCapability("deviceName", "POCOPHONE F1");
         cap.setCapability("platformVersion", "9");
         cap.setCapability("app", "/Users/ivanivanov/Downloads/ru.bcs.premier_2019-03-23.apk");
-        driver = new AndroidDriver<WebElement>(new URL("http://test:test-password@172.20.10.10:4444/wd/hub"),cap);
+        driver = new AndroidDriver<WebElement>(new URL("http://test:test-password@selenoid.t-global.bcs:4444/wd/hub"),cap);
         Assert.assertNotNull(driver);
     }
 

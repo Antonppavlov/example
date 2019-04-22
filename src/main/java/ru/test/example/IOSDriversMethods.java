@@ -21,7 +21,7 @@ public class IOSDriversMethods {
         cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12.2");
         cap.setCapability(MobileCapabilityType.APP, "ru.admitadteam.Cooking-eggs");
 //        cap.setCapability("bundleId", "ru.admitadteam.Cooking-eggs");
-        driver = new IOSDriver<WebElement>(new URL("http://test:test-password@172.20.10.10:4444/wd/hub"),cap);
+        driver = new IOSDriver<WebElement>(new URL("http://test:test-password@selenoid.t-global.bcs:4444/wd/hub"),cap);
         Assert.assertNotNull(driver);
 
     }
